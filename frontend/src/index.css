@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+  --bg: #FDF6F2;
+  --surface: #FFFFFF;
+  --text: #1E1E1E;
+  --muted: #5A5450;
+  --border: #E7DDD7;
+
+  --accent: #A67834;
+  --accent-contrast: #FFFFFF;
+
+  --link: #986931;
+  --link-hover: #5E3E17;
+}
+
+.theme-dark {
+  --bg: #142624;
+  --surface: #1C2E2C;
+  --text: #EDEBE6;
+  --muted: #C9C3BB;
+  --border: #2D3C39;
+
+  --accent: #B8884E;
+  --accent-contrast: #1A1A1A;
+
+  --link: #D6B575;
+  --link-hover: #986931;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

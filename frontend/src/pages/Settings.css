@@ -1,0 +1,103 @@
+.settings-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Merriweather', serif;
+}
+.settings-title {
+  font-size: 2rem;
+  color: var(--text);
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.settings-section, .settings-form {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(60,47,47,0.08);
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.label {
+  color: var(--text);
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+.input {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  font-family: 'Merriweather', serif;
+  transition: border 0.2s;
+}
+.input:focus {
+  border: 1.5px solid var(--accent);
+  outline: none;
+}
+.save-button, .theme-toggle, .delete-btn {
+  padding: 0.75rem 0;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-size: 1.1rem;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.save-button:hover, .theme-toggle:hover, .delete-btn:hover {
+  background: var(--link-hover);
+}
+.theme-toggle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+.delete-btn {
+  background: var(--surface);
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+  margin-top: 0.5rem;
+}
+.delete-btn:hover {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+.success-msg {
+  color: var(--text);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.error-msg {
+  color: var(--accent);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+@media (max-width: 600px) {
+  .settings-container {
+    padding: 1rem 0.2rem;
+  }
+  .settings-section, .settings-form {
+    padding: 1rem 0.5rem;
+  }
+} 
